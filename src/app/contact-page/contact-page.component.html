@@ -1,0 +1,11 @@
+<div class="content-box" *ngIf="valueAssigned">
+    <h3>Contact the seller</h3>
+    <!-- <p>{{valueAssigned}}<br>{{listing.name}}</p> -->
+    <div>
+        <label>Your Email : <input name="email" [(ngModel)]="email"/></label>
+    </div>
+    <div>
+        <label>Your message : <textarea name="message" rows="5" cols="25" [(ngModel)]="message"></textarea></label>
+    </div>
+    <button (click)="sendMessage()">Send</button>
+</div>
